@@ -1,11 +1,15 @@
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Noto Sans TC', sans-serif;
 }
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 p,a,span,li,label{
 	font-family: 'Open Sans', sans-serif;
 }
+
+
 img{
 	max-width:100%;
+
 }
 nav li{
 	    margin: 0 13px;
@@ -58,9 +62,15 @@ p{
     line-height: 26px;
     color: #707070;
 }
+
+p.font-1{
+	font-size: 32px;
+	color: #834886;
+}
+
 p.lead{
 	color: black;
-	line-height: 31px;
+	line-height: 34px;
 }
 #latest {
 	background: rgb(248, 248, 248);
