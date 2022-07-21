@@ -30,8 +30,12 @@ nav li{
 }
 #intro .btn{
 	margin-top: 20px;
+	background-color: #f05f5c;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: none;
 }
-.btn{
+#navbarSupportedContent .btn{
     background-color: #f05f5c;
     padding: 7px 28px;
     border-radius: 20px;
