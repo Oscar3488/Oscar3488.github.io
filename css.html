@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css.css">
+    
+        <title>
+            background position calc
+        </title>
+ <!--也可以直接用sytle把CSS 寫在html 裡面-->       
+        <style> 
+            /*CSS的註解*/
+            /*  標籤選擇器*//*群組選擇器"，"*/
+            h1,h2,h3,h4,h5,h6{
+                font-family: 'Noto Sans TC',sans-serif;
+            }
+            p,a,span,li,label {
+                font-size: 32px;
+                font-family: '微軟正黑體','Open Sans',sans-serif;
+                font-weight: bolder;
+                color:gold;
+            }
+            /*  .xxx 是class 選擇器*/
+            .emText{ color:rgb(0, 0, 0);}
+            .pual{color:rgb(15, 194, 194);}
+            .linda{color: #fcbafc;}
+            .mary{color:rgb(30, 194, 15);}
+            /*  #.xxx 是ID 選擇器*/
+            #latest{color:black;}
+            /*  *是通用選擇器 會套用到所有沒被套用的東西*/
+            *{color:rgb(92, 18, 167);}
+            /* 屬性選擇器*/
+            div{color:black;}/*直接選擇div*/
+            div[title] {color:rgb(253, 7, 7);}/*選 div中有title屬性的*/
+            div[title=fishbecat] {color:rgb(17, 224, 103);}/*div中title為fishbecat的*/
+            div[title~=fishbecats] {color:rgb(18, 56, 225);}/*div title中有fishbecats就套用*/
+            /*後代選擇器*/
+            div a{color:red;}/*div中的a才會套用 兩個中間是空白*/
+            #test a{color:purple;}
+            .test a,p{color:blue;} 
+            /*子選擇器*//*一定要一等親才會套用中間不能有多間隔*/
+            div p{color:red;}
+            div > p{color:purple;}
+            /*同層相鄰選擇器*//*有點類似後代選擇器但是不是包在裡面而是下一行*/
+            h1{color:red;}
+            h1 + a{color:purple;}
+            
+            p{color:rgba(252,186,3,0.8);
+            font-size:40px;
+            letter-spacing: 10px;
+            line-height: 1.5;
+            font-weight: 500;
+            text-align:right;/*left ,center*/
+            font-family: '標楷體', sans-serif;
+           }
+           div {
+            font-family:Arial,'Times New Roman','Microsoft YaHei'; font:bold 12px/0.75em Arial,'Times New Roman','Microsoft YaHei';
+            font-size:40px;
+            line-height: 1.5;
+            }
+          
+          /*全部設定字體*/
+           body { font-family: verdana, Times New Roman, 新細明體, 微軟正黑體; }
+            
+
+           .over>div{
+            background: red;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            padding: 20px;
+            margin: 50px;
+            border: 3px dashed black;
+
+           }
+           .seq>div{
+            background: red;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            padding: 20px;
+            margin: 50px;
+            border: 3px dashed black;
+            display: inline-block;/*並排*/
+
+           }
+           .seq a{
+            
+            display: block;/*換行排列*/
+           }
+        </style>
+    </head>
+    <body>
+        <p class="emText">test</p>
+        <p class="linda pual mary ">test</p> <!--會選擇最後一個可套用的css-->
+        <p class="linda mary ">test</p>
+        <p class="linda">test</p>
+        <p id="latest">test</p>
+        <i>test</i>
+        <ul>
+            <li>
+                <span>
+                    <a href="#">Link</a>
+                    <a href="#">連結</a>
+                </span>
+            </li>
+        </ul>
+        <div>divtest</div>
+        <div title="1">divtest</div>
+        <div title="fishbecat">divtest</div>
+        <div title="fishbecats anddog">divtest</div>
+        <div>
+            <a> test</a>
+        </div> 
+        <div id="test">
+            <a>test</a>
+        </div>
+        <div class="test">
+            <a>Test</a>
+            <p>Test</p>
+        </div>
+        <div>
+            <p>
+                test2
+            </p>
+            <span>
+                <p>
+                    test2
+                </p>
+            </span>
+        </div>
+        <h1>test</h1>
+        <a>test</a>
+        <p>天氣很好</p>
+        <div>trytry試試看</div>
+        <a>讓我試試</a>
+        <div>
+            <span style="font-family: verdana,TimesNew Roman,新細明體, 微軟正黑體;">獨立設定字型</span>
+        </div>
+        <div class="over">
+            <div>
+                test
+            </div>
+        </div>
+        <div class="seq">
+            <div>
+                test
+            </div>
+            <div>
+                test
+            </div>
+            <a>test</a>
+            <a>test2</a>
+        </div>
+    </body>
+</html>
