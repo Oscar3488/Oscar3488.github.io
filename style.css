@@ -120,6 +120,12 @@ p.lead{
 #latest i{
 	margin-right:5px;
 }
+
+#latest .btn:hover{
+	opacity:0.8;
+	background-color: #5cb0f0!important;
+}
+
 #email{
 	padding: 80px 0px
 }
