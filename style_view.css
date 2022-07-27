@@ -55,3 +55,16 @@ hr{
     background-color: #a6d2d4;
     
 }
+
+#content {
+    font-size: 40px;
+    
+}
+
+#content li{
+    background-color: aliceblue;
+}
+
+#content img{
+   height: 300px;
+}
