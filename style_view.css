@@ -6,6 +6,11 @@
     border: none;
 }
 
+.navbar{
+	font-size: large;
+	font-weight: bold;
+}
+
 .btn:hover{
 	opacity:0.8;
 	background-color: #f05f5c!important;
@@ -25,12 +30,24 @@ h3{
     font-size: 20px;
 }
 
+img{
+    width: 100%;
+}
+
+
 hr{
     width:"100%";
     /* border-style: dashed;
     color: #6bf05c; */
     border: 2px dashed rgb(0, 0, 0) ;
 }
+
+/* body{
+    margin:0px;
+    padding:0px;
+    background:#fff url('https://techs.co.jp/photoshare/upload/save_image/1-99-051_L.jpg') center center fixed no-repeat;
+    background-size: cover;
+    }        */
 
 .message hr{
     border: 1px solid rgb(0, 0, 0) ;
@@ -67,4 +84,5 @@ hr{
 
 #content img{
    height: 300px;
+   width: 100%;
 }
