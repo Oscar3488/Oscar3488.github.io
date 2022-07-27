@@ -19,6 +19,6 @@ function message(){
     let li = document.createElement("li");
     li.innerText=add;
     ms.insertBefore(li,ms.children[0]);
-    add.value="";
+    add.value = "";
     // alert(ms)
 }
