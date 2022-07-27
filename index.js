@@ -14,8 +14,11 @@ function back(){
 }
 
 function message(){
-    let ms = document.getElementsByClassName("board")[0].innerHTML;
+    let ms = document.getElementsByClassName("board")[0];
     let add = document.getElementById("text").value
-    document.write(ms+add)
+    let li = document.createElement("li");
+    li.innerText=add;
+    ms.insertBefore(li,ms.children[0]);
+    add.value="";
     // alert(ms)
 }
