@@ -12,3 +12,10 @@ function back(){
     location.href='#'
     // alert(location.href)
 }
+
+function message(){
+    let ms = document.getElementsByClassName("board")[0].innerHTML;
+    let add = document.getElementById("text").value
+    document.write(ms+add)
+    // alert(ms)
+}

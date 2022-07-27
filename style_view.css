@@ -1,0 +1,49 @@
+.btn{
+	margin-top: 20px;
+	background-color: #f05f5c;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn:hover{
+	opacity:0.8;
+	background-color: #f05f5c!important;
+}
+
+.form-control{
+	position:relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h3{
+    background-color: rgb(94, 91, 91);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+hr{
+    width:"100%";
+    /* border-style: dashed;
+    color: #6bf05c; */
+    border: 2px dashed rgb(0, 0, 0) ;
+}
+
+.message hr{
+    border: 1px solid rgb(0, 0, 0) ;
+    width: 100%;
+}
+
+.message .btn{
+    margin-top: 20px;
+	background-color: #615cf0;
+    padding: 7px 28px;
+    border-radius: 50px;
+    border: none;
+}
+
+.message .btn:hover{
+	opacity:0.8;
+	background-color: #5cd2f0!important;
+}
