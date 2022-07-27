@@ -8,3 +8,7 @@ function Serch(){
     // console.log(search_content)
 }
 
+function back(){
+    location.href='#'
+    // alert(location.href)
+}
