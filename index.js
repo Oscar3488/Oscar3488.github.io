@@ -13,6 +13,10 @@ function back(){
     // alert(location.href)
 }
 
+function home(){
+    location.href='https://oscar3488.github.io/'
+}
+
 function message(){
     let ms = document.getElementsByClassName("board")[0];
     let add = document.getElementById("text").value
