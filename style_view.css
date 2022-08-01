@@ -28,6 +28,7 @@ h3{
     background-color: rgb(94, 91, 91);
     color: aliceblue;
     font-size: 20px;
+    width: 70%;
 }
 
 img{
@@ -36,10 +37,11 @@ img{
 
 
 hr{
-    width:"100%";
+    
     /* border-style: dashed;
     color: #6bf05c; */
     border: 2px dashed rgb(0, 0, 0) ;
+    width:100%;
 }
 
 /* body{
