@@ -26,3 +26,6 @@ function message(){
     add.value = "";
     // alert(ms)
 }
+
+const pageWidth  = document.documentElement.scrollWidth;
+console.log(pageWidth)
