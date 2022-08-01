@@ -62,11 +62,11 @@ function start(){
         document.getElementById("new_article").style.position = "static"
         document.getElementById("new_article").style.width = "70%"
         document.getElementsByClassName("article_div")[0].style.width = "100%"
-        document.getElementsByClassName("article_div")[0].className = "article_div_down"
+        document.getElementById("articlediv").className = "article_div_down"
         
     }
     else if(cw>=1000){
-        document.getElementsByClassName("article_div_down")[0].className = "article_div"
+        document.getElementById("articlediv").className = "article_div"
         document.getElementById("new_article").style.position = "absolute"
         document.getElementById("new_article").style.width = "250px"
         document.getElementsByClassName("article_div")[0].style.width = "200px"

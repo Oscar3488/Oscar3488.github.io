@@ -81,13 +81,15 @@ hr{
     color: black;
 }
 
-.article_div a:hover{
+.article_div_down a:hover{
     
     color: #028db4;
     transition-duration: 2s;
     overflow: visible;
-    margin-left: -200px;
+    /* margin-left: -200px; */
 }
+
+
 
 
 
