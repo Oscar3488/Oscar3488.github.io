@@ -71,8 +71,5 @@ function start(){
         document.getElementById("new_article").style.width = "250px"
         document.getElementsByClassName("article_div")[0].style.width = "200px"
         
-        
-        
-        
     }
 }

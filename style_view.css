@@ -65,11 +65,11 @@ hr{
 }
 .article{
     overflow: hidden;
-    display: inline-flex;
+    display: inline-block;
     max-width: 100%;        
     text-overflow: ellipsis;
     white-space:nowrap;
-    color: #000;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -86,10 +86,16 @@ hr{
     color: #028db4;
     transition-duration: 2s;
     overflow: visible;
-    /* margin-left: -200px; */
+    
 }
 
-
+.article_div a:hover{
+    
+    color: #028db4;
+    transition-duration: 2s;
+    overflow: visible;
+    margin-left: -200px;
+}
 
 
 
@@ -138,4 +144,8 @@ footer a:link{
 
 footer a:visited{
     color:  rgb(247, 185, 16);
+}
+
+footer img{
+    width: 50%;
 }
