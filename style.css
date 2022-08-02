@@ -8,7 +8,6 @@ p,a,span,li,label{
 
 
 
-
 nav li{
 	    margin: 0 13px;
 }
@@ -28,21 +27,37 @@ nav li{
 }
 #intro .btn{
 	margin-top: 20px;
-	background-color: #f05f5c;
+	background-color: #5ce1f0;
     padding: 7px 28px;
     border-radius: 20px;
     border: none;
 }
 #navbarSupportedContent .btn{
-    background-color: #f05f5c;
+    background-color: #5ce1f0;
     padding: 7px 28px;
     border-radius: 20px;
     border: none;
 }
 .btn:hover{
 	opacity:0.8;
-	background-color: #f05f5c!important;
+	background-color: #5cf0ed!important;
 }
+
+.nav-item  a .fa-solid{
+    
+    margin-left: -10px;
+    transform: scale(0);
+    /* border: 2px solid black; */
+}
+
+.nav-item  a:hover .fa-solid{
+    
+    margin-left: 0px;
+    transform: scale(1);
+    transition: 0.5s;
+    /* border: 2px solid black; */
+}
+
 #second{
 	padding: 80px 0px;
 }
