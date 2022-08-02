@@ -1,6 +1,6 @@
 .btn{
 	margin-top: 20px;
-	background-color: #f05f5c;
+	background-color: #5ce1f0;
     padding: 7px 28px;
     border-radius: 20px;
     border: none;
@@ -13,7 +13,7 @@
 
 .btn:hover{
 	opacity:0.8;
-	background-color: #f05f5c!important;
+	background-color: #5cf0ed!important;
 }
 
 .form-control{
@@ -23,13 +23,35 @@
     height: 50%;
 
 }
+.nav-item  a .fa-solid{
+    
+    margin-left: -10px;
+    transform: scale(0);
+    /* border: 2px solid black; */
+}
+
+.nav-item  a:hover .fa-solid{
+    
+    margin-left: 0px;
+    transform: scale(1);
+    transition: 1s;
+    /* border: 2px solid black; */
+}
+
+
 
 h3{
     background-color: rgb(94, 91, 91);
     color: aliceblue;
     font-size: 20px;
     width: 70%;
+    box-shadow: 10px -10px 0px 0px rgb(243, 229, 26);
 }
+
+.title h2{
+    color: aliceblue;
+}
+
 
 img{
     width: 100%;
@@ -61,6 +83,7 @@ hr{
     right: 6%;
     border: 2px solid black;
     background-color: rgb(167, 209, 230);
+    box-shadow: 4px -2px 20px 2px rgb(85, 111, 122);
     
 }
 .article{
@@ -70,6 +93,7 @@ hr{
     text-overflow: ellipsis;
     white-space:nowrap;
     color: rgb(0, 0, 0);
+    /* box-shadow: 10px 0px 20px 2px black; */
     
 }
 
@@ -95,6 +119,7 @@ hr{
     transition-duration: 2s;
     overflow: visible;
     margin-left: -200px;
+    /* background-color: black; */
 }
 
 
