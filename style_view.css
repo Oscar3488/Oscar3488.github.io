@@ -66,10 +66,11 @@ hr{
     width:100%;
 }
 
-.body{
+body{
     margin:0px;
     padding:0px;
-    background:#fff url('https://topic.cw.com.tw/event/2019penghu/assets/images/img_3.jpg') center center fixed no-repeat;
+    background:scroll;
+    background-image:linear-gradient(to bottom right,rgba(255, 255, 255, 0.715),rgba(114, 162, 196, 0.719));
     background-size: cover;    
     }       
     
@@ -144,7 +145,7 @@ hr{
 
 .murmur{
     /* border: 3px dotted red; */
-    background-color: #a6d2d4;
+    background-image:linear-gradient(to right,rgba(126, 245, 187, 0.762),rgba(139, 179, 207, 0));
     
 }
 
@@ -162,13 +163,26 @@ hr{
    width: 100%;
 }
 
+.image{
+    box-shadow: 5px 3px 5px 5px rgb(78, 78, 78);
+    background-color: #f2f2f200;
+    padding: 0px;
+}
+
+.north-1-1{
+    /* box-shadow: 5px 3px 5px 5px rgb(78, 78, 78); */
+    
+    background-color: #f2f2f23a;
+}
+
+
 footer a:link{
     text-decoration: none;
-     color: rgb(247, 185, 16);
+     color: rgb(0, 0, 0);
     }
 
 footer a:visited{
-    color:  rgb(247, 185, 16);
+    color:  rgb(0, 0, 0);
 }
 
 footer img{
