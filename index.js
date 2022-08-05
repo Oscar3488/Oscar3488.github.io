@@ -1,22 +1,22 @@
 
 
-
+// 外部搜尋
 function Serch(){
     let search_content = document.getElementById("n. vmp6").value;
     window.open(`https://www.google.com.tw/search?q=${search_content}` );
     // alert(search_content)
     // console.log(search_content)
 }
-
+// 回頂部
 function back(){
     location.href='#'
     // alert(location.href)
 }
-
+// 返回首頁
 function home(){
     location.href='https://oscar3488.github.io/'
 }
-
+// 留言板功能
 function message(){
     let ms = document.getElementsByClassName("board")[0];
     let add = document.getElementById("text").value
@@ -27,32 +27,9 @@ function message(){
     // alert(ms)
 }
 
+// 判定視窗大小後改變最新文章位置
 start();
 window.addEventListener('resize', start);
-// function start(){
-//     console.log(document.documentElement.clientWidth);
-//     let cw = document.documentElement.clientWidth
-//     if (cw<1000){
-//         console.log(cw)
-//         document.getElementById("new_article").style.display = "none"
-//     }
-//     else if(cw>=1000){
-//         document.getElementById("new_article").style.display = "block"
-//     }
-// }
-
-// #new_article{
-    
-//     margin: 5px;
-//     padding: 20px;
-//     /* float: right; */
-//     position: absolute;
-//     top: 500px;
-//     right: 6%;
-//     border: 2px solid black;
-//     background-color: rgb(167, 209, 230);
-    
-// }
 function start(){
     console.log(document.documentElement.clientWidth);
     let cw = document.documentElement.clientWidth
@@ -74,6 +51,9 @@ function start(){
     }
 }
 
+
+
+// 首頁資料卡片碰觸動畫
 function Biger(x){
     x.style.width="28%"
     x.style.margin="-20px"
