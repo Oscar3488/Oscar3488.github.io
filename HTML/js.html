@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+<script>
+    array1=[10,20,30,40,50];
+    console.log("原始陣列", array1);
+    // entries 包含函鍵跟值
+    var iterator1 = array1.entries();
+    console.log( iterator1.next().value);
+    // values  只有值
+    var iterator1 = array1.values();
+    console.log( iterator1.next().value);
+
+    var filtered = array1.filter(value=> value>25);
+    console.log(filtered)
+
+
+
+    var arr = ["a", "b", "c"];
+    var iter = arr.entries();
+    var a = [];
+
+    // for(var i=0; i< arr.length; i++){   // 实际使用的是这个
+    for (var i=0; i< arr.length+1; i++){    // 注意，是length+1，比数组的长度大
+        var tem = iter.next();             // 每次迭代时更新next
+        console.log(tem.done);             // 这里可以看到更新后的done都是false
+        if (tem.done !== true){             // 遍历迭代器结束done才是true
+            console.log(tem.value);
+            a[i] = tem.value;
+    }
+}
+
+let A = [900,8500,5500,6500];
+let B = A.map(function(value, index, array){
+    return value*2
+});
+
+console.log(A)
+console.log(B)
+
+var arr = [1,10,25];
+console.log(arr);
+let mapArr = arr.map(x => x*2);
+console.log(mapArr); 
+
+
+//正則表達式
+var reg = /you/;//比對的目標
+var target = "just do you best you can!"
+console.log(target.search(reg));
+
+var target= "18,2150,310/n,Sunday,Monday,Tuesday"
+var reg1 = /[f-m]/gi;
+console.log(target.match(reg1));
+
+var reg1 = /^18/gi;      //開頭符合18
+var reg2 = /day$/g;     //結尾符合day
+var reg3= /Tuesday$/gi;        //比對符合3~4位數字
+var reg4= /310$/;        //比對符合3~4位數字
+var reg5= /310$/m;        //比對符合3~4位數字 m 比對換行符號
+
+console.log(target.match(reg1));
+console.log(target.match(reg2));
+console.log(target.match(reg3));
+console.log(target.match(reg4));
+console.log(target.match(reg5));
+
+
+var target = "There's a hero.If you look inside your heart.You don't have to be afraid of what you are.There's an answer If you reach into your soul And the sorrow that you know will melt away."
+//you出現幾次
+console.group("查詢某字出現次數")
+reg = /you\b/gi;
+var result = target.match(reg);
+console.log(result);
+console.log("you 出現", result.length,"次");
+console.groupEnd("查詢某字次數");
+
+    function greeting(){
+        console.log("hollw");
+    }
+    greeting();
+    // 上下相同
+    var greeting1 = () =>{
+        console.log("hollw1");        
+    }
+    greeting1();
+    function greeting(){
+        return "hollw2"
+    }
+    // 上下相同
+    var greeting= () => "hellow"
+
+    greeting();
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
