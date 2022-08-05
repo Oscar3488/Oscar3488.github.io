@@ -73,3 +73,20 @@ function start(){
         
     }
 }
+
+function Biger(x){
+    x.style.width="28%"
+    x.style.margin="-20px"
+    x.style.marginTop="-50px"
+    x.style.transitionDuration="0.5s"
+    // x.style.boxShadow = "2px 0px 5px 5px black"
+}
+
+function Small(x){
+    x.style.width="25%"
+    x.style.margin="0px"
+    x.style.transitionDuration="0.5s"
+}
+
+
+// big.addEventListener("mouseover",Biger(big)) .style.width="2000px"
